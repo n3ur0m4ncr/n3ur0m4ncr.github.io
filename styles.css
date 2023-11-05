@@ -26,32 +26,36 @@ header h1 {
 
 /* Estilo dos botões das abas */
 .tab button {
-  background-color: inherit;
+  background-color: #000000; /* Fundo preto */
   float: left;
-  border: none;
+  border: 1px solid #39FF14; /* Borda em verde neon */
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 17px;
-  color: #39FF14; /* Verde neon */
+  color: #39FF14; /* Texto em verde neon */
+  margin: 0 2px;
 }
 
-/* Muda a cor do fundo dos botões ao passar o mouse */
+/* Muda a cor do texto dos botões ao passar o mouse */
 .tab button:hover {
-  background-color: #121212;
+  color: #FFFFFF; /* Texto em branco */
+  background-color: #121212; /* Fundo um pouco mais claro */
 }
 
 /* Cria uma classe ativa para os botões */
 .tab button.active {
-  background-color: #121212;
+  background-color: #121212; /* Fundo um pouco mais claro */
+  color: #FFFFFF; /* Texto em branco */
 }
 
 /* Estilo do conteúdo da aba */
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border-top: none;
+  background-color: #121212; /* Fundo um pouco mais claro */
+  color: #FFFFFF; /* Texto em branco */
 }
 
 footer {
