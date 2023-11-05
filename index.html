@@ -1,49 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meu Site de Hacking</title>
+<title>Hacking Style Blog</title>
 <style>
     body {
+        margin: 0;
+        padding: 0;
         background-color: #121212;
-        color: #0F0;
+        color: #e0e0e0;
         font-family: 'Courier New', Courier, monospace;
     }
-    header, article, footer {
-        margin: 20px;
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    header {
+        background: #333;
+        color: #ffffff;
         padding: 20px;
-        border: 1px solid #0F0;
+        text-align: center;
     }
-    .video-container {
-        position: relative;
-        width: 100%;
-        max-width: 560px;
-        height: 0;
-        padding-bottom: 56.25%;
+    nav {
+        background: #444;
+        padding: 10px 0;
     }
-    .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
+    nav a {
+        color: #c1c1c1;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+    }
+    nav a:hover {
+        background: #555;
+    }
+    article {
+        margin-bottom: 20px;
+        padding: 20px;
+        background: #222;
+    }
+    footer {
+        background: #333;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
         width: 100%;
-        height: 100%;
     }
 </style>
 </head>
 <body>
-<header>
-    <h1>Meu Site de Hacking</h1>
-</header>
-<article>
-    <h2>Título do Artigo</h2>
-    <p>Conteúdo do artigo...</p>
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    <header>
+        <h1>Hacking Style Blog</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Articles</a>
+        <a href="#">Videos</a>
+        <a href="#">About</a>
+    </nav>
+    <div class="container">
+        <article>
+            <h2>Article Title</h2>
+            <p>This is an example of an article post on a hacking style blog. You can write your content here.</p>
+        </article>
+        <article>
+            <h2>Embedded Video</h2>
+            <video width="100%" controls>
+                <source src="movie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </article>
     </div>
-</article>
-<footer>
-    <p>&copy; 2023 Meu Site de Hacking</p>
-</footer>
+    <footer>
+        <p>Hacking Style Blog &copy; 2023</p>
+    </footer>
 </body>
 </html>
