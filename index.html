@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Site de Hacking</title>
+<style>
+    body {
+        background-color: #121212;
+        color: #0F0;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    header, article, footer {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #0F0;
+    }
+    .video-container {
+        position: relative;
+        width: 100%;
+        max-width: 560px;
+        height: 0;
+        padding-bottom: 56.25%;
+    }
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
 </head>
 <body>
-    <h1>Bem-vindo ao Meu Blog!</h1>
-    <p>Este é um artigo de exemplo.</p>
-    <img src="link-da-sua-imagem" alt="Descrição da imagem">
-    <p>Aqui vai um vídeo:</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<header>
+    <h1>Meu Site de Hacking</h1>
+</header>
+<article>
+    <h2>Título do Artigo</h2>
+    <p>Conteúdo do artigo...</p>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+</article>
+<footer>
+    <p>&copy; 2023 Meu Site de Hacking</p>
+</footer>
 </body>
 </html>
