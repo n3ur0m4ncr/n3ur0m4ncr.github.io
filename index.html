@@ -3,80 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hacking Style Blog</title>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #121212;
-        color: #e0e0e0;
-        font-family: 'Courier New', Courier, monospace;
-    }
-    .container {
-        width: 80%;
-        margin: auto;
-        overflow: hidden;
-    }
-    header {
-        background: #333;
-        color: #ffffff;
-        padding: 20px;
-        text-align: center;
-    }
-    nav {
-        background: #444;
-        padding: 10px 0;
-    }
-    nav a {
-        color: #c1c1c1;
-        text-decoration: none;
-        padding: 10px 20px;
-        display: inline-block;
-    }
-    nav a:hover {
-        background: #555;
-    }
-    article {
-        margin-bottom: 20px;
-        padding: 20px;
-        background: #222;
-    }
-    footer {
-        background: #333;
-        color: #ffffff;
-        text-align: center;
-        padding: 10px;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
-</style>
+<title>Hacker Hub</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Hacking Style Blog</h1>
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Articles</a>
-        <a href="#">Videos</a>
-        <a href="#">About</a>
-    </nav>
-    <div class="container">
-        <article>
-            <h2>Article Title</h2>
-            <p>This is an example of an article post on a hacking style blog. You can write your content here.</p>
-        </article>
-        <article>
-            <h2>Embedded Video</h2>
-            <video width="100%" controls>
-                <source src="movie.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </article>
-    </div>
-    <footer>
-        <p>Hacking Style Blog &copy; 2023</p>
-    </footer>
+<header>
+  <h1>Hacker Hub</h1>
+</header>
+
+<main>
+  <section id="articles">
+    <h2>Artigos</h2>
+    <!-- Exemplo de artigo -->
+    <article>
+      <h3>Título do Artigo</h3>
+      <p>Este é um exemplo de um artigo sobre hacking. Aqui vai o conteúdo...</p>
+      <a href="#">Leia mais...</a>
+    </article>
+    <!-- Adicione mais artigos aqui -->
+  </section>
+
+  <section id="videos">
+    <h2>Vídeos</h2>
+    <!-- Exemplo de vídeo -->
+    <article>
+      <h3>Título do Vídeo</h3>
+      <video controls>
+        <source src="path_to_your_video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+      </video>
+      <p>Descrição do vídeo...</p>
+    </article>
+    <!-- Adicione mais vídeos aqui -->
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2023 Hacker Hub</p>
+</footer>
 </body>
 </html>
