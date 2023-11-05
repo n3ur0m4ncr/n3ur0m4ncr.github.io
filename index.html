@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,35 +12,47 @@
   <h1>Hacker Hub</h1>
 </header>
 
-<main>
-  <section id="articles">
-    <h2>Artigos</h2>
-    <!-- Exemplo de artigo -->
-    <article>
-      <h3>Título do Artigo</h3>
-      <p>Este é um exemplo de um artigo sobre hacking. Aqui vai o conteúdo...</p>
-      <a href="#">Leia mais...</a>
-    </article>
-    <!-- Adicione mais artigos aqui -->
-  </section>
+<!-- Abas de navegação -->
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Articles')" id="defaultOpen">Artigos</button>
+  <button class="tablinks" onclick="openTab(event, 'Videos')">Vídeos</button>
+</div>
 
-  <section id="videos">
-    <h2>Vídeos</h2>
-    <!-- Exemplo de vídeo -->
-    <article>
-      <h3>Título do Vídeo</h3>
-      <video controls>
-        <source src="path_to_your_video.mp4" type="video/mp4">
-        Seu navegador não suporta vídeos.
-      </video>
-      <p>Descrição do vídeo...</p>
-    </article>
-    <!-- Adicione mais vídeos aqui -->
-  </section>
-</main>
+<!-- Conteúdo da aba Artigos -->
+<div id="Articles" class="tabcontent">
+  <h2>Artigos</h2>
+  <!-- Conteúdo de artigos aqui -->
+</div>
+
+<!-- Conteúdo da aba Vídeos -->
+<div id="Videos" class="tabcontent">
+  <h2>Vídeos</h2>
+  <!-- Conteúdo de vídeos aqui -->
+</div>
 
 <footer>
   <p>&copy; 2023 Hacker Hub</p>
 </footer>
+
+<script>
+// Função JavaScript para abrir as abas
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Obter o elemento com id="defaultOpen" e clicar nele para abrir a aba padrão.
+document.getElementById("defaultOpen").click();
+</script>
+
 </body>
 </html>
